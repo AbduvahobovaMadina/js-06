@@ -176,5 +176,65 @@ function toggleShow (){
             return `Result = ${-a} , b = ${-b}, c = ${-c} `
         }
     }
-    console.log(( bar(2,56,2)));
+    // console.log(( bar(2,56,2)));
+}
+
+{
+    // 17 masala
+    function bar( a, b, c) {
+        if ((a < b && b < c) || (a > b && b > c) ) {
+            return  `sonlar ${a} ${b} ${c} 
+            Result: a son ${a *= 2} ; b son ${b *= 2} ; c son ${c *= 2};`
+        }
+        else{
+            return `Result = ${-a} , b = ${-b}, c = ${-c} `
+        }
+    }
+    // console.log(bar(2,12,4));
+}
+
+{
+    // 18 masala
+    function bar(a,b,c) {
+        if ( a === b) {
+            return `${a} = ${b} va c: ${c} soning tartib raqami 3`
+        }
+        else if(a === c){
+            return `${a} = ${c} va  b: ${b} soning tartib raqami 2`
+        }
+        else if(b === c){
+            return `${b} = ${c} va a: ${a} soning tartib raqami 1`
+        }
+    }
+    // console.log(bar(1,1,2));
+}
+
+{
+    // 19 masala
+    function bar(a , b, c, n) {
+        if (a === b && a === c) {
+            return `${a} = ${b} = ${c} n:${n} soning tartib raqami 4`
+        } else if (a === b && a === n){
+            return `${a} = ${b} = ${n} c:${c} soning tartib raqami 3`
+        } else if (a === c && a === n){
+            return `${a} = ${c} = ${n} b:${b} soning tartib raqami 2`
+        } else if (b === c && b === n){
+            return `${b} = ${c} = ${n} a:${a} soning tartib raqami 1`
+        }    
+    }
+    // console.log(bar(1,2,1,1));
+}
+
+{
+    // 20 masala
+    function bar(a, b, c) {
+        let masofaAB = Math.abs(a-b);
+        let masofaAC = Math.abs(a-c);
+        if (masofaAB < masofaAC) {
+            return `eng yaqin nuqta b, masofa ${masofaAB}`
+        } else {
+            return ` eng yaqin masofa c, masofa ${masofaAC}`
+        }
+    }
+    // console.log(bar(2,6,8));
 }
