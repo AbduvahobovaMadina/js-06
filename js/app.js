@@ -144,13 +144,21 @@ function toggleShow (){
 {
     // 14 masala
     function bar(a, b, c){
-        if(a > b && b < c || a > b && a > c){
-            return `kichik: ${b}`
-        }else{
-            return `katta: ${a}`
+        if(a > b && a > c && b > c){
+            return `kichik: ${c} kattasi:${a}`
+        }else if(b > a && a > c && b > c){
+            return `kichik: ${c} kattasi:${b}`
+        }else if(b > c && c > a && b > a){
+            return `kichik: ${a} kattasi:${b}`
+        }else if(a > c && c > b && a > b){
+            return `kichik: ${b} kattasi:${a}`
+        }else if(c > a && a > b && c > b){
+            return `kichik:${b} kattasi:${c}`
+        }else if(c > b && b > a && c > a){
+            return `kichik:${a} kattasi:${c}`
         }
     }
-    // console.log(bar(2,6,8));
+    console.log(bar(6,9,8));
 }
 
 {
