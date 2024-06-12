@@ -141,3 +141,40 @@ function toggleShow (){
     }
     // console.log(son(4, 2, 1));
 }
+{
+    // 14 masala
+    function bar(a, b, c){
+        if(a > b && b < c || a > b && a > c){
+            return `kichik: ${b}`
+        }else{
+            return `katta: ${a}`
+        }
+    }
+    // console.log(bar(2,6,8));
+}
+
+{
+    // 15 masala
+    function bar(a, b, c, d) {
+        if (a === b && b === c) return 4;
+        if (a === b && b === d) return 3;
+        if (a === c && c === d) return 2;
+        if (b === c && c === d) return 1;
+        return 0;
+    }
+    // console.log(bar(3,6,12,2));
+}
+
+{
+    // 16 masala
+    function bar( a, b, c) {
+        if ( a < b && b < c) {
+            return `sonlar ${a} ${b} ${c} 
+            Result: a son ${a *= 2} ; b son ${b *= 2} ; c son ${c *= 2};`
+        }
+        else{
+            return `Result = ${-a} , b = ${-b}, c = ${-c} `
+        }
+    }
+    console.log(( bar(2,56,2)));
+}
